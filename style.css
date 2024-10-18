@@ -1,0 +1,243 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1em 2em;
+  width: 100%;
+}
+header img {
+  width: 20%;
+  height: auto;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.vermelho {
+  background-color: red;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  width: 12rem;
+  height: 2.5rem;
+  font-family: "Inter", system-ui;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.preto {
+  background-color: #181818;
+  color: white;
+  border-radius: 0.5rem;
+  border: 0.05rem solid white;
+  width: 6.5rem;
+  height: 2.5rem;
+  font-family: "Inter", system-ui;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+main {
+  flex: 1; /* O main ocupa o espaço restante */
+  margin: 7em;
+}
+
+.secaoEpisodios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.7em;
+  width: 100%;
+}
+.secaoEpisodios .titulos {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.secaoEpisodios img {
+  width: 10%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Inter", system-ui;
+  color: white;
+  font-size: 3.2rem;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-family: "Inter", system-ui;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.episodios {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2em 0 1em 0;
+  gap: 1rem;
+}
+
+.episodio {
+  display: flex;
+  flex-direction: column;
+}
+.episodio img {
+  width: 22rem;
+  height: auto;
+}
+.episodio h3 {
+  color: white;
+  font-family: "Inter", system-ui;
+  max-width: 22rem;
+  padding: 1.25em 0;
+  white-space: pre-wrap;
+}
+.episodio p {
+  color: white;
+  font-family: "Inter", system-ui;
+  text-align: left;
+  max-width: 22rem;
+  line-height: 1.5rem;
+  padding: 0 0 1.25rem 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #111;
+  width: 100%;
+}
+footer nav {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  align-items: center;
+  margin: 0 3.5em;
+  width: 100%;
+}
+footer nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+  }
+  header img {
+    width: 30%;
+  }
+  .button {
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+  }
+  .vermelho {
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 0.7em;
+  }
+  .preto {
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.7em;
+  }
+  main {
+    margin: 2.5em 1em;
+  }
+  .secaoEpisodios img {
+    align-content: flex-end;
+    width: 20%;
+  }
+  .titulos h1 {
+    font-size: 2rem;
+  }
+  .titulos h2 {
+    font-size: 1rem;
+  }
+  .episodios {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .episodio {
+    align-items: center;
+    width: 100%;
+  }
+  .episodio img {
+    width: 100%;
+  }
+  .episodio h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .episodio p {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer nav {
+    flex-direction: row;
+    margin: 1em 0;
+    justify-content: space-around;
+  }
+  footer nav a {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 721px) and (max-width: 920px) {
+  main {
+    flex: 1;
+    margin: 5.5em 2em 3.5em;
+  }
+  .secaoEpisodios img {
+    width: 15%;
+  }
+  .episodios {
+    justify-content: center;
+  }
+  .episodio img {
+    width: 100%;
+  }
+  .episodio h3 {
+    text-align: center;
+    max-width: 100%;
+  }
+  .episodio p {
+    width: 100%;
+  }
+  footer nav {
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
